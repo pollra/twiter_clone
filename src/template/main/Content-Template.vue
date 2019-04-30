@@ -1,7 +1,7 @@
 <template>
   <div id="content-template">
     <left-board-oragaisms id="leftBoard"></left-board-oragaisms>
-<!--    <main-oraganisms></main-oraganisms>-->
+    <main-oraganisms></main-oraganisms>
 <!--    <right-board-oraganisms></right-board-oraganisms>-->
   </div>
 </template>
