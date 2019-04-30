@@ -1,7 +1,7 @@
 <template>
   <div id="content-template">
     <left-board-oragaisms id="leftBoard"></left-board-oragaisms>
-    <main-oraganisms></main-oraganisms>
+    <main-oraganisms id="mainBoard"></main-oraganisms>
 <!--    <right-board-oraganisms></right-board-oraganisms>-->
   </div>
 </template>
@@ -29,6 +29,9 @@
     padding: 0px;
     top: 46px;
     left: 0px;
+  }
+  #mainBoard{
+    margin-top: 10px;
   }
 
 /*  1235 이상이면 1190 */

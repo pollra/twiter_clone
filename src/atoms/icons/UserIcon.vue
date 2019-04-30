@@ -13,10 +13,7 @@
 <style scoped>
   .userImage{
     position: relative;
-    float: left;
-    top: 7px;
     border: 0px solid #ffffff;
-    margin-right: 20px;
     cursor:pointer;
   }
   img{

@@ -4,7 +4,7 @@
       <input placeholder="트위터 검색하기" @click="searchClickEvent">
       <i class="fas fa-search"></i>
     </form>
-    <user-icon></user-icon>
+    <user-icon class="rC-userIcon"></user-icon>
     <tweetBtn></tweetBtn>
   </div>
 </template>
@@ -77,5 +77,10 @@
     form{
       width: 94px;
     }
+  }
+  .rC-userIcon{
+    top: 7px;
+    float: left;
+    margin-right: 20px;
   }
 </style>
