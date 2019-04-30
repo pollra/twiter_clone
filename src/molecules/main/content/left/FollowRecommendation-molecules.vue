@@ -8,11 +8,14 @@
         <span class="middot">.</span>
         <div class="fR-info-btn">모두 보기</div>
       </div>
-      <div class="fR-items" v-for="item in frItems" :key="item">
-        <div class="fR-item">
+      <div class="fR-items">
+        <div class="fR-item" v-bind:class="{tM:index >= 1 ? true : false}" v-for="(item, index) in frItems" :key="item">
           <a class="item-img">
             <img v-bind:src="item.imgPath">
           </a>
+          <div class="item-close">
+            <i class="fas fa-times"></i>
+          </div>
           <div class="fR-item-content">
             <div class="fR-item-userText">
               <div class="item-name">
@@ -22,12 +25,15 @@
                 <span>{{item.linkName}}</span>
               </div>
             </div>
-            <div class="item-close">
-              <i class="fas fa-times"></i>
-            </div>
             <button class="item-follow-btn">팔로우</button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="fR-find">
+      <div class="fR-find-inner">
+        <i class="fas fa-user-friends"></i>
+        <span>지인들을 찾아보세요</span>
       </div>
     </div>
   </div>
@@ -40,7 +46,7 @@
         return {
           frItems:[
             {
-              name:'집사어디갔냐',
+              name:'집사를찾습니다',
               imgPath:'/src/assets/follow/follow01.png',
               linkName: '@참치다떨어졌다'
             },{
@@ -48,9 +54,9 @@
               imgPath:'/src/assets/follow/follow02.jpg',
               linkName: '@sibal'
             },{
-              name:'단비',
+              name:'단비꺼야',
               imgPath:'/src/assets/follow/follow03.jpg',
-              linkName: '@너그거맛있어보인다'
+              linkName: '@너그거맛있어보이네?'
             }
           ]
         }
@@ -63,11 +69,10 @@
     width: 100%;
     overflow: hidden;
     background: white;
-    margin: 0px;
     display: block;
   }
   .fR-inner{
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
   }
   .fR-info{
     display: flex;
@@ -99,6 +104,7 @@
   }
   .fR-item-content{
     margin-left: 58px;
+    margin-right: 20px;
   }
   .item-name{
     font-size: 14px;
@@ -107,8 +113,7 @@
   .fR-items{
     min-height: 48px;
     font-size: 12px;
-    border-bottom: 1px solid #e6ecf0;
-    padding-bottom: 8px;
+
   }
   .item-follow-btn{
     display: block;
@@ -119,9 +124,12 @@
     background: white;
     color: #1B95E0;
     font-weight: bold;
+    margin-top: 5px;
   }
   .fR-item{
     /*width: 100%;*/
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e6ecf0;
   }
   .item-link{
     font-size: 12px;
@@ -133,5 +141,20 @@
     display: inline-block;
     color: #ccd6dd;
     float: right;
+    margin-left: 10px;
+    background: #ffffff;
+  }
+  .tM{
+    margin-top: 10px;
+  }
+  .fR-find{
+    border-top:1px solid #e6ecf0;
+    margin-top: -1px;
+    padding: 15px;
+    font-size: 14px;
+    color: #1B95E0;
+  }
+  .fR-find-inner{
+    font-size: 12px;
   }
 </style>

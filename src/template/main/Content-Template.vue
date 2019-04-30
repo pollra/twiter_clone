@@ -18,7 +18,7 @@
 
 <style scoped>
   #content-template{
-    height: 100%;
+    height: 2000px;
     min-width: 890px;
     max-width: 1190px;
     position: relative;
