@@ -23,7 +23,7 @@
     max-width: 1190px;
     position: relative;
     background: #e6ecf0;
-    display: table;
+    display: flex;
     margin: 0px auto;
     /*padding: 56px 14px 15px;*/
     padding: 0px;
@@ -31,7 +31,7 @@
     left: 0px;
   }
   #mainBoard{
-    margin-top: 10px;
+    margin: 10px;
   }
 
 /*  1235 이상이면 1190 */

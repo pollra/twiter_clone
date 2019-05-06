@@ -14,10 +14,10 @@
   .userImage{
     position: relative;
     border: 0px solid #ffffff;
-    cursor:pointer;
   }
   img{
     width: 31px;
+    height: 31px;
     border-radius: 16px;
   }
 

@@ -1,6 +1,7 @@
 <template>
   <div class="mainBoard">
     <input-form-molecules id="main-inputForm"></input-form-molecules>
+
   </div>
 </template>
 
@@ -16,7 +17,6 @@
   .mainBoard{
     background: white;
     width: 590px;
-    float: right;
   }
   #main-inputForm{
 

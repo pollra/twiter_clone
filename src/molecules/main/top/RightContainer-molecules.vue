@@ -82,5 +82,6 @@
     top: 7px;
     float: left;
     margin-right: 20px;
+    cursor:pointer;
   }
 </style>
