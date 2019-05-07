@@ -1,15 +1,16 @@
 <template>
   <div class="mainBoard">
     <input-form-molecules id="main-inputForm"></input-form-molecules>
-
+    <content-molecules></content-molecules>
   </div>
 </template>
 
 <script>
     import InputFormMolecules from "../../../molecules/main/content/center/InputForm-molecules";
+    import ContentMolecules from "../../../molecules/main/content/center/Content-molecules";
     export default {
         name: "Main-oraganisms",
-      components: {'input-form-molecules':InputFormMolecules}
+      components: {'content-molecules':ContentMolecules, 'input-form-molecules':InputFormMolecules}
     }
 </script>
 
