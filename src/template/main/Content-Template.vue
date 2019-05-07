@@ -2,7 +2,7 @@
   <div id="content-template">
     <left-board-oragaisms id="leftBoard"></left-board-oragaisms>
     <main-oraganisms id="mainBoard"></main-oraganisms>
-<!--    <right-board-oraganisms></right-board-oraganisms>-->
+    <right-board-oraganisms></right-board-oraganisms>
   </div>
 </template>
 
@@ -18,7 +18,7 @@
 
 <style scoped>
   #content-template{
-    height: 2000px;
+    /*height: 2000px;*/
     min-width: 890px;
     max-width: 1190px;
     position: relative;

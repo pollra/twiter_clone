@@ -31,4 +31,20 @@
   .module{
     margin-bottom: 10px;
   }
+  @media (min-width: 1235px) {
+    #followRe{
+      display: none;
+    }
+    #footer{
+      display: none;
+    }
+  }
+  @media (max-width: 1236px) {
+    #followRe{
+      display: block;
+    }
+    #footer{
+      display: block;
+    }
+  }
 </style>
