@@ -22,7 +22,6 @@
     min-width: 890px;
     max-width: 1190px;
     position: relative;
-    background: #e6ecf0;
     display: flex;
     margin: 0px auto;
     /*padding: 56px 14px 15px;*/

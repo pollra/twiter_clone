@@ -46,7 +46,7 @@
             v-bind:size="iconSize.thread"></content-icon>
           <span>이 스레드 보기</span>
         </div>
-        <div class="promotion-look">
+        <div class="promotion-look" v-if="tweetContent.promotion">
           <i class="fas fa-external-link-square-alt"></i>
           <span>프로모션 중</span>
         </div>
@@ -102,6 +102,7 @@
     width: 100%;
     border-bottom: #e6ecf0 1px solid;
     position: relative;
+    background: white;
   }
   .content-inner{
     padding: 10px;
@@ -192,16 +193,13 @@
   .thread-look > .user-icon-thread{
     left: 20px;
   }
-  .miniLine > div{
-    background: black;
-    border-right: 1px solid #48AAE6;
-  }
   .miniLine{
     position: absolute;
-    height: 100px;
-    left: 10px;
+    text-align: center;
+    left: 32px;
     top: 82px;
-    bottom: 50px;
-    width: 25px;
+    bottom: 42px;
+    border: 2px solid #48AAE6;
+    border-radius: 5px;
   }
 </style>

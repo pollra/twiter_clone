@@ -16,7 +16,6 @@
 
 <style scoped>
   .mainBoard{
-    background: white;
     width: 590px;
   }
   #main-inputForm{
